@@ -1,0 +1,79 @@
+# This is the commands configuration file for Bukkit.
+# For documentation on how to make use of this file, check out the Bukkit Wiki at
+# http://wiki.bukkit.org/Commands.yml
+# 
+# If you need help on this file, feel free to join us on irc or leave a message
+# on the forums asking for advice.
+# 
+# IRC: #spigot @ irc.spi.gt
+#    (If this means nothing to you, just go to http://www.spigotmc.org/pages/irc/ )
+# Forums: http://www.spigotmc.org/
+# Bug tracker: http://www.spigotmc.org/go/bugs
+
+command-block-overrides: []
+unrestricted-advancements: false
+aliases:
+  icanhasbukkit:
+  - version $1-
+  help:
+  - helper
+  afk:
+  - eafk
+  reply:
+  - ereply
+  spawn:
+  - warp WorldSpawn
+  npg:
+  - say New players should read the guide at www.mcmiddleearth.com/wiki/new-player-guide
+  search:
+  - warp list -n $$1
+  map:
+  - say A complete real-time map is available at http://map.mcmiddleearth.com
+  ob:
+  - lp user $$1 parent set oathbreaker
+  unob:
+  - lp user $$1 parent set default
+  grant_voxel:
+  - lp user $$1 parent add badge_voxel
+  grant_worldeditfull:
+  - lp user $$1 parent add badge_worldeditfull
+  grant_worldeditlimited:
+  - lp user $$1 parent add badge_worldeditlimited
+  grant_minigames:
+  - lp user $$1 parent add badge_minigames
+  grant_tours:
+  - lp user $$1 parent add badge_tours
+  take_voxel:
+  - lp user $$1 parent remove badge_voxel
+  take_worldeditfull:
+  - lp user $$1 parent remove badge_worldeditfull
+  take_worldeditlimited:
+  - lp user $$1 parent remove badge_worldeditlimited
+  take_minigames:
+  - lp user $$1 parent remove badge_minigames
+  take_tours:
+  - lp user $$1 parent remove badge_tours
+  advertise:
+  - broadcast Don't forget to register on our website, www.mcmiddleearth.com for all
+    sorts of news and updates!
+  - broadcast Or you can follow us on Facebook at https://www.facebook.com/mcmeproject/
+  - broadcast YouTube https://www.youtube.com/channel/UCD09nFjPOatRr4nNy9siEpA
+  - broadcast Other platforms available too! https://www.mcmiddleearth.com/wiki/social-media-and-services/
+  votemcme:
+  - superbvote:vote
+  ban:
+  - litebans:ban $1-
+  tempban:
+  - litebans:tempban $1-
+  mute:
+  - litebans:mute $1-
+  tempmute:
+  - litebans:tempmute $1-
+  warn:
+  - litebans:warn $1-
+  kick:
+  - litebans:kick $1-
+  unban:
+  - litebans:unban $1-
+  unmute:
+  - litebans:unmute $1-
